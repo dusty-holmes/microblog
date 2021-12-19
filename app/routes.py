@@ -4,7 +4,7 @@ from app import app
 @app.route('/index')
 def index():
     user = {'username': 'Dusty'}
-    return return '''
+    return '''
 <html>
     <head>
         <title>Home Page - Microblog</title>
