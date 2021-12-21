@@ -29,7 +29,6 @@ def login():
     app.logger.info(f'Submit with method {request.method}')
     if form.validate_on_submit():
         app.logger.info('attempted logon')
-        flash( f'Login requested for {form.username.data},' + \
-               f' remember me={form.remember_me.data}. ')
+        flash( f'Login requested for {form.username.data}, remember me={form.remember_me.data}')
         redirect('/index')
     return render_template( 'login.html',  form=form)
